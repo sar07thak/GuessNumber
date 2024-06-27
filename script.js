@@ -12,7 +12,9 @@ let container = document.querySelector(".container");
 let again_btn = document.querySelector(".btn_again");
 let mode = document.querySelector(".mode");
 let body = document.querySelector("body");
-let sun_moon = document.querySelector(".fa-sun");
+let sun_moon = document.querySelector(".fa-moon");
+let header = document.querySelector("header");
+
 
 function random(){
     return Math.floor(Math.random()*20);
@@ -61,24 +63,22 @@ check_btn.addEventListener("click", () => {
  }
 });
 
-let current_mode = "light" ;
+// let current_mode = "light" ;
 
-mode.addEventListener("click",()=>{
-   if(current_mode == "light" ){
-      current_mode = "dark";
-      container.style.backgroundColor= "white";
-      body.style.color = "#222";
-      sun_moon.classList.add("fa-moon");
-   }
-   else{
-      current_mode = "light";
-      container.style.backgroundColor= "#222";
-      body.style.color= "white";
-      sun_moon.classList.remove("fa-moon");
-
-   }
-   console.log(current_mode);
-})
+// mode.addEventListener("click",()=>{
+//    if(current_mode == "light" ){
+//       current_mode = "dark";
+//       container.style.backgroundColor="#eee";
+//       header.style.color="#222";
+//       again_btn.style.backgroundColor="#eee";
+//       again_btn.style.color="#222";
+//    }
+//    else{
+//       current_mode = "light";
+//       container.style.backgroundColor="#222";
+//    }
+//    console.log(current_mode);
+// })
 
 
 again_btn.addEventListener("click",()=>{
